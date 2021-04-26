@@ -27,15 +27,34 @@
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <button class="btn btn-outline-secondary bg-secondary" type="submit"><a href="./two.html"
-                            style="text-decoration: none;" class="text-white">Logout</a></button>
-                </form>
-
-
+                
+                <button class="btn btn-outline-secondary bg-secondary text-white" type="submit" id="logout">Logout</button>
             </div>
         </nav>
     </header>
+    <!-- <header> 
+        <nav class="navbar navbar-inverse" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                   <button id="btn-id" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                   </button>
+                   <a class="navbar-brand " href="#">MyBrand</a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#register">Register</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <button class="btn btn-outline-secondary bg-secondary text-white" type="submit" id="logout">Logout</button>
+                </div>
+            </div>
+        </nav>
+    </header> -->
+
     <!-- Home -->
     <div class="container-fluid">
         <div class="jumbotron" id="home">
@@ -47,7 +66,7 @@
                     my Bootstrap Website.!
                 </h1>
 
-                <img class="col-sm-12 col-lg-3" src="./about-us.png" alt="pc">
+                <img class="col-sm-12 col-lg-3" src="./Images/about-us.png" alt="pc">
             </div>
             <p class="lead">Hello Everyone. I am Bhanu Chandra. This is my practice website in bootstrap.</p>
             <hr class="my-4">
@@ -67,28 +86,28 @@
                     <div class="jumbotron" id="inner-jumbo">
                         <div class="form-group row" id="inner-jumbo1">
                             <input type="txt" class="form-control col-sm-12 col-lg-5 mx-auto d-block"
-                                placeholder="Enter your name ">
+                                placeholder="Enter your name " id="name">
                             <input type="email" class="form-control col-sm-12 col-lg-5 mx-auto d-block"
-                                placeholder="Enter your email">
+                                placeholder="Enter your email" id="email">
                         </div>
                     </div>
                     <div class="jumbotron" id="inner-jumbo">
                         <div class="form-group row" id="inner-jumbo1">
                             <input type="password" class="form-control col-sm-12 col-lg-5 mx-auto d-block"
-                                placeholder="Enter your password ">
+                                placeholder="Enter your password " id="pass1">
                             <input type="password" class="form-control col-sm-12 col-lg-5 mx-auto d-block"
-                                placeholder="Confirm your password">
+                                placeholder="Confirm your password" id="pass2">
                         </div>
                     </div>
                     <div class="jumbotron" id="inner-jumbo">
                         <div class="form-check">
                             <label for="gender" id="gender">Gender:</label>
 
-                            <input type="radio" name="gender" id="gender-r" class="radio" value="male">
-                            <label class="form-check-label" id="gender"> Male </label>
+                            <input type="radio" name="gender" id="gender-m" class="radio" value="male" checked>
+                            <label class="form-check-label" id="male"> Male </label>
 
-                            <input type="radio" name="gender" id="gender-r" class="radio" value="female">
-                            <label class="form-check-label" id="gender"> Female </label>
+                            <input type="radio" name="gender" id="gender-f" class="radio" value="female">
+                            <label class="form-check-label" id="female"> Female </label>
                         </div>
                     </div>
                     <div class="jumbotron" id="inner-jumbo">
@@ -102,8 +121,7 @@
                         <strong><label class="form-check-label text-light">Accept Terms & Conditions</label></strong>
                     </div>
                     <div class="form-group row">
-                        <button type="submit"
-                            class="btn btn-success col-sm-12 col-lg-4 mx-auto d-block">Register</button>
+                        <button type="submit" class="btn btn-success col-sm-12 col-lg-4 mx-auto d-block" id="reg">Register</button>
                         <button type="reset" class="btn btn-info col-sm-12 col-lg-4 mx-auto d-block">Reset</button>
                     </div>
                     <br>
@@ -166,9 +184,9 @@
             </div>
         </div>
     </div>
+    <div class="flicker" id="flicker"></div>
     <br><br>
     <!-- Optional JavaScript -->
-    <script src="./script.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -179,6 +197,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
