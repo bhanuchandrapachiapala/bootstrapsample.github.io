@@ -1,0 +1,29 @@
+img {
+    transform: scale(1.35);
+}
+img:hover {
+    transform: scale(1.45);
+}
+#inner-jumbo {
+    padding: 10px 5px 2px 5px;
+    margin-bottom: 20px;
+}
+#inner-jumbo1 {
+    padding: 10px 5px 2px 5px;
+    margin-bottom: 20px;
+}
+#inner-jumbo:hover {
+    box-shadow: 10px 10px 10px;
+}
+#register {
+    width: 55%;
+}
+#gender {
+    padding-left: 0px;
+    padding-right: 10px;
+}
+#card-a:hover {
+    box-shadow: rgb(136, 133, 133) 20px 10px 10px;
+    transform: scale(1.15);
+}
+
